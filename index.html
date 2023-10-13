@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="formatting.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>html and css practice</title>
@@ -10,22 +11,14 @@
       <h1>Emi</h1>
       <img
         src="./imgs/IMG-20220826-WA0004.jpg"
-        style="width: 300px; height: auto"
         alt="A picture of Emi lying on the bed"
       />
     </header>
-    <main>
-      <h2>The Mini Schnauzer!</h2>
-      <h3>
-        General
-        <a
-          href="https://www.viovet.co.uk/breed_information/0-251/Schnauzer"
-          target="_blank"
-          >Mini Schnauzer</a
-        >
-        info
-      </h3>
-      <p>
+    <main class="layout">
+      <div>
+      <h2 >The Mini Schnauzer! </h2>
+      
+      <p id="longtext">
         The Miniature Schnauzer, the smallest of the three Schnauzer breeds, is
         a generally healthy, long-lived, and low-shedding companion.The bushy
         beard and eyebrows give Minis a charming, human-like expression. The
@@ -38,12 +31,21 @@
         kids. Minis are sturdy little guys and enjoy vigorous play. Home and
         family oriented, they make great watchdogs.
       </p>
-
-      <p>
-        Don't let my stature fool you my sassiness is only shadowed by my cute
-        beard
+      <h3>
+        General
+        <a
+          href="https://www.viovet.co.uk/breed_information/0-251/Schnauzer"
+          target="_blank"
+          >Mini Schnauzer
+          </a>
+        info
+      </h3>
+      <p id="comment">
+        "Don't let my stature fool you, my sassiness is only shadowed by my cute
+        beard."
       </p>
-
+    </div>
+    <div>
       <h3>Emi's favourite food:</h3>
       <ul>
         <li>Chicken Bones</li>
@@ -59,18 +61,30 @@
       <h3>Emi's Daily routine</h3>
       <ol>
         <li>Wake up</li>
-        <li>(optional grumpy)</li>
+        <li>(Optional grumpy)</li>
         <li>Have breakfast</li>
         <li>Go on walk</li>
         <li>Sleep</li>
         <li>Sniff around the flat</li>
-        <li>second Walk</li>
+        <li>Second Walk</li>
         <li>Dinner</li>
         <li>Sleep</li>
       </ol>
+    </div>
     </main>
-    <footer>
-      Wanna Read this again <a href="#main-section">Go back up!</a>
+    <footer id="footer">
+      Wanna read this again <a href="#main-section">Click to go back up!</a>
     </footer>
   </body>
 </html>
+<!-- <section class="layout">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+</section>
